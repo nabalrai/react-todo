@@ -1,0 +1,21 @@
+// decalred variables for colors
+$black-color: hsl(225, 6%, 13%);
+$grey-color: hsl(249, 6%, 58%);
+$pickled-bean-color: hsl(24, 57%, 29%);
+$swirl-color: hsl(34, 20%, 79%);
+$white-color: hsl(0, 0%, 97%);
+
+$txt-colors: (
+  black-clr: $black-color,
+  disabled: $grey-color,
+  pickled-bean-logo: $pickled-bean-color,
+  swirl-bg: $swirl-color,
+);
+
+@each $name, $color in $txt-colors {
+  .#{$name}-txt {
+    color: $color;
+  }
+}
+
+
